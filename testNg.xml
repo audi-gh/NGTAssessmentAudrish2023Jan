@@ -7,8 +7,8 @@
             </run>
         </groups>
         <classes>
-         <class name="com.app.pages.ItemInBag"/>
-            <class name="com.app.pages.Username"/>
+         <class name="com.app.test.AppTests"/>
+
         </classes>
     </test>
 </suite>

@@ -25,8 +25,6 @@ public class ItemInBag {
         driver.findElement(By.xpath("//input[@class=\"desktop-searchBar\"]")).sendKeys("Watch");
         driver.findElement(By.xpath("//a[@class=\"desktop-submit\"]"));
         Actions action=new  Actions(driver);
-//        WebElement searchbox=driver.findElement(By.xpath("//input"));
-//        searchbox.sendKeys("Armani Watch");
         Thread.sleep(2000);
 
         WebElement searchbutton= driver.findElement(By.xpath("//a[@class=\"desktop-submit\"]"));
@@ -48,7 +46,7 @@ public class ItemInBag {
 
 
 
-        //WebElement addToBagButton= driver.findElement(By.xpath("//body/div[@id='mountRoot']/div[1]/div[1]/main[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]"));
+
         WebElement addToBagButton= driver.findElement(By.cssSelector("div.pdp-add-to-bag"));
         action.moveToElement(addToBagButton);
         action.click().build().perform();
