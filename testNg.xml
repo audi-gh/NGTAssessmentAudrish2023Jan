@@ -1,0 +1,14 @@
+<suite name="Suite">
+    <test  name="Test">
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+         <class name="com.app.pages.ItemInBag"/>
+            <class name="com.app.pages.Username"/>
+        </classes>
+    </test>
+</suite>
