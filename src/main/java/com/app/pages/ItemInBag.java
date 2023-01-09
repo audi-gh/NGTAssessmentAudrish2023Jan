@@ -27,28 +27,28 @@ public class ItemInBag {
         Actions action=new  Actions(driver);
         Thread.sleep(2000);
 
-        WebElement searchbutton= driver.findElement(By.xpath("//a[@class=\"desktop-submit\"]"));
-        action.moveToElement(searchbutton);
+        WebElement search= driver.findElement(By.xpath("//a[@class=\"desktop-submit\"]"));
+        action.moveToElement(search);
         action.click().build().perform();
         Thread.sleep(2000);
 
 
 
 
-        WebElement pricebutton=driver.findElement(By.xpath("(//div[@class='product-price'])[1]"));
-        action.moveToElement(pricebutton);
+        WebElement price=driver.findElement(By.xpath("(//div[@class='product-price'])[1]"));
+        action.moveToElement(price);
         action.click().build().perform();
 
-        ArrayList<String> tabs=new ArrayList<String>(driver.getWindowHandles());
-        driver.switchTo().window(tabs.get(1));
+        ArrayList<String> tabControl=new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabControl.get(1));
 
 
 
 
 
 
-        WebElement addToBagButton= driver.findElement(By.cssSelector("div.pdp-add-to-bag"));
-        action.moveToElement(addToBagButton);
+        WebElement addToBag= driver.findElement(By.cssSelector("div.pdp-add-to-bag"));
+        action.moveToElement(addToBag);
         action.click().build().perform();
         Thread.sleep(2000);
 
